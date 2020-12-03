@@ -3,7 +3,7 @@
  * @param {时间格式} fmt 
  * @param {时间} date 
  */
-function timeFormat(fmt, date) {
+function dateFormat(fmt, date) {
     const opt = {
         'y+': date.getFullYear().toString(),        // 年
         'M+': (date.getMonth() + 1).toString(),     // 月
@@ -22,9 +22,9 @@ function timeFormat(fmt, date) {
     return fmt
 }
 
-function testTimeFormat() {
-    const fmtTime =  timeFormat('yyyy-MM-dd hh:mm:ss', new Date())
+function testDateFormat() {
+    const fmtTime =  dateFormat('yyyy-MM-dd hh:mm:ss', new Date())
     console.log('fmtDate', fmtTime)
 }
 
-testTimeFormat()
+testDateFormat()
