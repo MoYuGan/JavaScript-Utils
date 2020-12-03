@@ -1,3 +1,7 @@
+/**
+ * 时间解析函数
+ * @param {时间} date 
+ */
 function dateAnalyzing (date) {
     const year = date.getFullYear() // 年
     const month = date.getMonth() + 1 // 月
